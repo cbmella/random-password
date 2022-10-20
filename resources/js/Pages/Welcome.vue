@@ -1,63 +1,36 @@
 <script setup>
 import { Head, Link } from '@inertiajs/inertia-vue3';
-/* import Navbar from '@/Components/Navbar.vue'; */
+import Navbar from '@/Components/B5/Navbar.vue';
 
 </script>
 
 <template>
 
-    <Head title="Welcome" />
+  <Head title="Welcome" />
 
+  <Navbar />
 
-    <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-12">
+        <h1>HERRAMIENTA DE GENERACIÓN DE CONTRASEÑAS</h1>
+        <p>Genere una contraseña segura</p>
+        <p>Utilice nuestro generador de contraseñas en línea para crear de forma instantánea una contraseña aleatoria y
+          segura.</p>
+      </div>
+      <div class="col-12">
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+          </div>
+          <div class="col-12 d-grid gap-2 mt-5">
+            <button type="submit" class="btn btn-primary">GENERAR</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-</nav>
-
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-12 col-sm-4">
-                Column
-            </div>
-            <div class="col-12 col-sm-4">
-                Column
-            </div>
-            <div class="col-12 col-sm-4">
-                Column
-            </div>
-        </div>
-    </div>
 
 </template>
