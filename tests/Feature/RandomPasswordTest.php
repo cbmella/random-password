@@ -13,6 +13,13 @@ class RandomPasswordTest extends TestCase
      * @return void
      */
 
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->withoutVite();
+    }
+
     public function test_home_screen_can_be_rendered()
     {
         $response = $this->get('/');
@@ -21,7 +28,7 @@ class RandomPasswordTest extends TestCase
     }
 
 
-/*     public function test_that_a_different_password_is_returned()
+    /*     public function test_that_a_different_password_is_returned()
     {
         $response = $this->get(route('home'));
 
