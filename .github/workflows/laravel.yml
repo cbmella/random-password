@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build Front End
-        run: npm install && NODE_ENV=CI npm run build
+        run: npm install && npm run dev
         working-directory: ./public/build
     - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
       with:
