@@ -2,7 +2,6 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
         "ssr": "vite build && vite build --ssr"
     },
     "devDependencies": {
