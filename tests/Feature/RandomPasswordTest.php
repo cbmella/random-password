@@ -12,18 +12,13 @@ class RandomPasswordTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
-    {
-        $this->assertTrue(true);
-    }
 
-
-/*     public function test_home_screen_can_be_rendered()
+    public function test_home_screen_can_be_rendered()
     {
-        $response = $this->get(route('home'));
+        $response = $this->get('/');
 
         $response->assertStatus(200);
-    } */
+    }
 
 
 /*     public function test_that_a_different_password_is_returned()
