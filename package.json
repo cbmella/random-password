@@ -2,7 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "ssr": "vite build && vite build --ssr"
+        "build": "vite build && vite build --ssr"
     },
     "devDependencies": {
         "@inertiajs/inertia": "^0.11.0",
