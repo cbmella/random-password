@@ -3,7 +3,7 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-/* use Inertia\Testing\AssertableInertia as Assert; */
+use Inertia\Testing\AssertableInertia as Assert; 
 
 class RandomPasswordTest extends TestCase
 {
@@ -28,7 +28,7 @@ class RandomPasswordTest extends TestCase
     }
 
 
-    /*     public function test_that_a_different_password_is_returned()
+    public function test_that_a_different_password_is_returned()
     {
         $response = $this->get(route('home'));
 
@@ -37,5 +37,5 @@ class RandomPasswordTest extends TestCase
                 // Checking a root-level property
                 ->has('rand_password')
         );
-    } */
+    }
 }
