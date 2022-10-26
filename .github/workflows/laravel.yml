@@ -16,23 +16,20 @@ jobs:
         node-version: [16.x]
         php-version: [8.1]
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run build
-        run: npm run build
       - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
         with:
           php-version: ${{ matrix.php-version }}
           tools: composer:v2
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: npm install
+      - name: Run build
+        run: npm run build    
       - uses: actions/checkout@v3
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
